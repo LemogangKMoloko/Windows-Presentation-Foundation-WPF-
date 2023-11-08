@@ -1,0 +1,147 @@
+﻿<Window x:Class="POE.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POE"
+        mc:Ignorable="d"
+        Title="BUDGET PLANNER" Height="342" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ScrollViewer Margin="0,0,0,10">
+            <StackPanel >
+
+                <Label Content="INCOME DETAILS"
+                   FontStyle="Oblique"
+                   FontWeight="UltraBold"
+                   
+                      />
+
+                <Label x:Name="firstLbl"
+                 Content="What Is Your Monthly Income?"
+                   FontStyle="Italic"
+                       FontWeight="DemiBold"
+                  />
+                <TextBox
+                    x:Name="monthlyIncTxtbox"               
+                    Width="100"
+                   
+                    TabIndex="0"
+                    HorizontalAlignment="Left" 
+                       />
+
+
+                <Label x:Name="secondLabel"
+                 Content="What Is Your Tax Deductions?"
+                   FontStyle="Italic"
+                       FontWeight="DemiBold"
+                   />
+                <TextBox
+                    x:Name="TaxTextbox"
+                    Width="100"
+                    TabIndex="1"
+                    HorizontalAlignment="Left" 
+                     />
+
+                <StackPanel >
+
+
+                    <Label Content="EXPENSES"
+                   FontStyle="Oblique"
+                   FontWeight="UltraBold"
+                           
+                          />
+
+
+                    <Label x:Name="GroceriesLabel"
+                 Content="How Much Do You Spend On Groceries?"
+                   FontStyle="Italic"
+                           FontWeight="DemiBold"
+                   />
+                    <TextBox
+                    x:Name="GroceriesTextbox"          
+                    Width="100"
+                        TabIndex="2"
+                    HorizontalAlignment="Left"
+                  />
+
+
+
+                    <Label x:Name="WaterNLightsLabel"
+                 Content="How Much Do You Spend On Water And Lights?"
+                   FontStyle="Italic"
+                           FontWeight="DemiBold"
+                   />
+                    <TextBox
+                    x:Name="WaterNLightsTextbox"
+                    Width="100"
+                        TabIndex="3"
+                    HorizontalAlignment="Left"
+                    
+                  />
+
+
+
+                    <Label x:Name="TravelLabel"
+                 Content="How Much Are Your Traveling Costs?"
+                   FontStyle="Italic"
+                           FontWeight="DemiBold"
+                   />
+                    <TextBox
+                    x:Name="TravelTextbox"
+                    Width="100"
+                        TabIndex="4"
+                    HorizontalAlignment="Left"
+                    
+                  />
+
+
+
+                    <Label x:Name="Cellphonelbl"
+                 Content="How Much Do You Spend Your Cellphone?"
+                   FontStyle="Italic"
+                           FontWeight="DemiBold"
+                   />
+                    <TextBox
+                    x:Name="CellphoneTxt"
+                    Width="100"
+                        TabIndex="5"
+                    HorizontalAlignment="Left"
+                    
+                  />
+
+
+
+                    <Label x:Name="OtherThingslbl"
+                 Content="How Much Do You Spend On Other Things?"
+                   FontStyle="Italic"
+                           FontWeight="DemiBold"
+                   />
+                    <TextBox
+                    x:Name="OtherThingstxt"
+                    Width="100"
+                        TabIndex="6"
+                    HorizontalAlignment="Left"
+                    
+                  />
+
+                    <Label
+                        FontStyle="Italic"
+                        FontWeight="ExtraBlack" Content="Please Make sure ALL Questions are answered***"/>
+
+
+                </StackPanel>
+                <Button Content="Save And Submit" 
+                    Width="70"
+                    HorizontalAlignment="Left"
+                    FontWeight="DemiBold"
+                    Cursor="Hand"
+                    Click="Button_Click"/>
+                <Button Content="Next" 
+                    Width="70"
+                    FontWeight="DemiBold"
+                    Cursor="Hand"
+                    Click="Button_Click_1"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

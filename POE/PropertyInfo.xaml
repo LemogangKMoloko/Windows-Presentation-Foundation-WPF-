@@ -1,0 +1,178 @@
+﻿<Window x:Class="POE.PropertyInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:POE"
+        mc:Ignorable="d"
+        Title="PROPERTY INFO" Height="490" Width="600" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Are You Buying Or Renting Property?"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="180,10,0,0" 
+               FontWeight="DemiBold"
+               FontStyle="Italic"
+               />
+
+
+        <Label Content="**For this section&#x0a;Please answer the Following questions&#x0a;ONLY if your are BUYING PROPERTY" 
+               HorizontalAlignment="Left"
+               Margin="10,41,0,0"
+               VerticalAlignment="Top"
+               FontStyle="Italic"
+               FontWeight="ExtraLight" Width="256"
+                   />
+
+
+        <Label Content="What Is The Purchise Price Of The Property?"
+               HorizontalAlignment="Left" 
+               Margin="10,127,0,0"
+               VerticalAlignment="Top"
+               FontStyle="Italic"
+               FontWeight="DemiBold"
+                   />
+
+        <TextBox HorizontalAlignment="Left"
+                 Margin="10,153,0,0"
+                 Text=""
+                  VerticalAlignment="Top"
+                 Width="100"
+                 x:Name="PurchasiPriceTxt"
+                     />
+
+        <Label Content="BUYING SECTION" 
+               FontStyle="Oblique"
+               FontStretch="Expanded"
+               FontWeight="ExtraBlack"
+               HorizontalAlignment="Left"
+               Margin="11,101,0,0"
+               VerticalAlignment="Top"
+               
+               />
+
+        <Label Content="RENTING SECTION" 
+               HorizontalAlignment="Left"
+               Margin="352,101,0,0"
+               VerticalAlignment="Top"
+               FontStyle="Oblique"
+               FontStretch="Expanded"
+               FontWeight="ExtraBlack"
+                   />
+
+        <Label Content="What is the rental amount of the property" 
+               HorizontalAlignment="Left"
+               Margin="342,127,0,0"
+               VerticalAlignment="Top"
+                FontStyle="Italic"
+               FontWeight="DemiBold"
+                   />
+
+        <TextBox HorizontalAlignment="Left" 
+                     x:Name="RentTxt"
+                 Margin="352,153,0,0" 
+                 Text="" 
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top"
+                 Width="100"
+                     />
+
+        <Label Content="**For this section&#xA;Please answer the Following questions&#xA;ONLY if your are RENTING PROPERTY" 
+            HorizontalAlignment="Left"
+            Margin="342,43,0,0"
+            VerticalAlignment="Top"
+            FontStyle="Italic"
+            FontWeight="ExtraLight" Width="256"
+                   />
+
+        <Label Content="What Is The Deposit Of The Property?"
+            HorizontalAlignment="Left" 
+            Margin="10,176,0,0"
+            VerticalAlignment="Top"
+            FontStyle="Italic"
+            FontWeight="DemiBold"
+                   />
+
+        <TextBox HorizontalAlignment="Left"
+                 x:Name="DepositTxt"
+                 Margin="10,202,0,0"
+                 Text=""
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top"
+                 Width="100"
+                     />
+
+        <Label Content="What Is The Interest Rate(%) Of The Property?"
+            HorizontalAlignment="Left" 
+            Margin="10,233,0,0"
+            VerticalAlignment="Top"
+            FontStyle="Italic"
+            FontWeight="DemiBold"
+                   />
+
+        <TextBox HorizontalAlignment="Left"
+                 x:Name="InterestRateTxt"
+            Margin="9,264,0,0"
+            Text=""
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="100"/>
+
+        <Label Content="How Long Are You Going To Pay For The Property?"
+            HorizontalAlignment="Left" 
+            Margin="9,287,0,0"
+            VerticalAlignment="Top"
+            FontStyle="Italic"
+            FontWeight="DemiBold"/>
+        
+        <TextBox HorizontalAlignment="Left"
+            x:Name="TimeTxt"
+            Margin="10,318,0,0"
+            Text=""
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="100"/>
+
+        <Button Content="Save And Submit"
+                x:Name="BuyBtn"
+                HorizontalAlignment="Left"
+                Margin="11,354,0,0"
+                FontWeight="SemiBold"
+                VerticalAlignment="Top"
+                Click="BuyBtn_Click"/>
+
+        <Button Content="Save And Submit"
+                x:Name="RentBtn"
+                HorizontalAlignment="Left" 
+                Margin="352,182,0,0" 
+                FontWeight="SemiBold"
+                VerticalAlignment="Top"
+                Click="RentBtn_Click"/>
+
+        <Label Content="Please make sure all the questions are answered before saving and submitting &#x0a;
+               DONT ANSWER FOR BOTH SECTIONS!!"
+               HorizontalAlignment="Left" 
+               Margin="116,406,0,0"
+               FontWeight="UltraLight"
+               FontStyle="Italic"
+               VerticalAlignment="Top"/>
+
+        <Button Content="Vehicle Section" 
+                x:Name="NextBtn"
+                HorizontalAlignment="Left"
+                Margin="11,379,0,0"
+                FontWeight="SemiBold"
+                VerticalAlignment="Top"
+                Click="NextBtn_Click"/>
+
+        <Button Content="Vehicle Section"
+                x:Name="Next1Btn"
+                HorizontalAlignment="Left"
+                Margin="352,211,0,0"
+                FontWeight="SemiBold"
+                Click="Next1Btn_Click"
+                VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Window>
